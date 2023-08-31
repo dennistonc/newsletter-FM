@@ -34,19 +34,24 @@
         </ul>
 
         <!-- <form action="/url" method="GET"> -->
-          <form>
+          <!-- <form id="form" action="/"> -->
+        <form id="form">
           <label>
             <p class="label-tiny">
               Email address
             </p>
+            <div class="input-control">
               <input
+              id="email"
               type="email"
               name="email_address"
               placeholder="email@company.com"
               pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/"
               required>
+              <span class="error"></span>
+            </div>
             </label>
-          <button type="submit" id="submitButton" onclick="submitEmail()">Subscribe to monthly newsletter</button>
+          <button type="submit" id="submitButton">Subscribe to monthly newsletter</button>
         </form>
         </div>
 
@@ -67,7 +72,7 @@
       Thanks for subscribing!
     </h1>
 
-    <p id="sub-copy">A confirmation email has been sent to <b>ash@loremcompany.com.</b>
+    <p id="sub-copy">A confirmation email has been sent to <span id="em-value"></span>
     Please open it and click the button inside to confirm your subscription.
     </p>
 
