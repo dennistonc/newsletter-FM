@@ -17,4 +17,4 @@ I decided to just stick to plain HTML, CSS, and JavaScript for this one.
 I think the biggest challenge and new knowledge for me was using javascript to manipulate some css after a certain window/device width. I used media queries in the css but had a hard time with the mobile hero image keep wanting to show up in desktop view.
 
 ## view here !
-[tadaa](https://newsletter-fm.netlify.app/). :tada:
+[tadaaa](https://newsletter-fm.netlify.app/) :tada:
