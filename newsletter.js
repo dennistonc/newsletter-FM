@@ -1,3 +1,28 @@
+const screenWidth = window.innerWidth;
+const heroDiv = document.querySelector('.hero-div');
+
+showMobileHero = () => {
+  if (screenWidth >= 481 && screenWidth <= 664) {
+  // if (screenWidth >= 664) {
+    // document.getElementById("hero-mobile").style.cssText = "display:block !important";
+      heroDiv.style.display = "none";
+    } else {
+      heroDiv.style.display = "block";
+    }
+  // document.getElementById("hero-mobile").style.cssText = "display:block !important";
+}
+
+hideMobileHero = () => {
+  if (screenWidth >= 481 && screenWidth <= 664) {
+  // if (screenWidth >= 664) {
+    // document.getElementById("hero-mobile").style.cssText = "display:block !important";
+      heroDiv.style.display = "block";
+    } else {
+      heroDiv.style.display = "none";
+    }
+  // document.getElementById("hero-mobile").style.cssText = "display:none !important";
+}
+
 dismissEnd = () => {
     const resetInput = document.getElementById("email");
     resetInput.value = "";
@@ -5,6 +30,7 @@ dismissEnd = () => {
 
     document.getElementById("showSuccess").style.display = "none";
     document.getElementById("showReset").style.display = "block";
+    showMobileHero();
 } 
 
 const form = document.getElementById("form");
@@ -55,5 +81,8 @@ const validateInputs = () => {
     document.getElementById("showSuccess").style.display = "block";
     document.getElementById("showReset").style.display = "none";
     document.getElementById("em-value").innerText = emailValue;
+    hideMobileHero();
   }
+
+  window.addEventListener('resize', showMobileHero, hideMobileHero);
 }
