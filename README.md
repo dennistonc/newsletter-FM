@@ -10,7 +10,7 @@ Thanks for checking out my recreation of this front-end coding challenge from [F
 
 The challenge was to build out this newsletter form and get it looking as close to the given design as possible using whatever tech stack we wanted. A provided template included guides and parameters for what to add into the project.
 
-I decided to just stick to plain HTML, CSS, and JavaScript for this one.
+I decided to just stick to plain HTML, CSS, and JavaScript for this one. There is also no backend/server usage -- just a simple frontend application only.
 
 ## what i learned
 
